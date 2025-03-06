@@ -1016,10 +1016,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 882845988}
+  - component: {fileID: 882845989}
   - component: {fileID: 882845987}
   m_Layer: 0
   m_Name: HolyWheat
-  m_TagString: Untagged
+  m_TagString: HolyWheat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1039,7 +1040,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1061,6 +1062,21 @@ Transform:
   - {fileID: 556773187}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &882845989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882845986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3323c6fb4960bb4885cd4501c0d5bdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerController: {fileID: 1425908691}
+  _forceIncrease: 8
+  _resetBoostDuration: 5
 --- !u!1 &980814380
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,10 +1306,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1168669055}
+  - component: {fileID: 1168669057}
   - component: {fileID: 1168669056}
   m_Layer: 0
   m_Name: GoldWheat
-  m_TagString: Untagged
+  m_TagString: GoldWheat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1329,12 +1346,27 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.7861829, y: 1.0323486, z: 0.18848798}
   m_Center: {x: 0.03195262, y: -0.17938066, z: 0.0040665455}
+--- !u!114 &1168669057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168669054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53117c44338261b499767da6b03caa2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerController: {fileID: 1425908691}
+  _movementIncreaseSpeed: 15
+  _resetBoostDuration: 5
 --- !u!1 &1195433656
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,6 +1606,7 @@ GameObject:
   - component: {fileID: 1425908691}
   - component: {fileID: 1425908692}
   - component: {fileID: 1425908693}
+  - component: {fileID: 1425908694}
   - component: {fileID: 1425908690}
   - component: {fileID: 1425908689}
   m_Layer: 0
@@ -1704,6 +1737,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerAnimator: {fileID: 2268476087328601308}
+--- !u!114 &1425908694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425908687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9c53a6dd5e2ba408267a1ff0e4f799, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1430325441
 GameObject:
   m_ObjectHideFlags: 0
@@ -2080,10 +2125,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1740255496}
+  - component: {fileID: 1740255497}
   - component: {fileID: 1740255495}
   m_Layer: 0
   m_Name: RottenWheat
-  m_TagString: Untagged
+  m_TagString: RottenWheat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2103,7 +2149,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2125,6 +2171,21 @@ Transform:
   - {fileID: 1195433657}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1740255497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740255494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef6f478454f94d0488ef89463bfe56d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerController: {fileID: 1425908691}
+  _movementDecreaseSpeed: -25
+  _resetBoostDuration: 5
 --- !u!1 &1761888497
 GameObject:
   m_ObjectHideFlags: 0
