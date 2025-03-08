@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8596055260821806133}
   - component: {fileID: 7048286475750846733}
   - component: {fileID: 7143444145999342655}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WallCorner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7a668623c958050488330bfd4f736d25, type: 2}
+  - {fileID: 2100000, guid: 470acf8186f306f4bb71c19bcd165b75, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
