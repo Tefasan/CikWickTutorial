@@ -9,7 +9,7 @@ public class EggCollectible : MonoBehaviour, ICollectible
          CameraShake.Instance.ShakeCamera(0.5f, 0.5f);
         // Yumurtayı GameManager'a bildir
         GameManager.Instance.OnEggCollected();
-
+        AudioManager.Instance.Play(SoundType.PickupGoodSound);
         // Yumurtayı yok et
         Destroy(gameObject);
     }
